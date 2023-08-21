@@ -19,6 +19,9 @@ GolApplication::GolApplication()
     initializeSdl();
     initializeInput();
     initializeGrid();
+
+    running = false;
+    fullscreen = false;
 }
 
 void GolApplication::run()
@@ -130,6 +133,17 @@ void GolApplication::handleEvents()
             {
             case SDL_SCANCODE_ESCAPE:
                 running = false;
+                break;
+            case SDL_SCANCODE_F11:
+                if (fullscreen)
+                {
+                    SDL_SetWindowFullscreen(window, 0);
+                }
+                else
+                {
+                    SDL_SetWindowFullscreen(window, SDL_WINDOW_FULLSCREEN_DESKTOP);
+                }
+                fullscreen = !fullscreen;
                 break;
             case SDL_SCANCODE_SPACE:
                 grid.togglePaused();

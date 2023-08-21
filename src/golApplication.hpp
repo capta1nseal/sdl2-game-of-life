@@ -21,6 +21,7 @@ public:
 private:
     bool running;
     unsigned int displayWidth, displayHeight;
+    bool fullscreen;
     SDL_Point center;
 
     SDL_DisplayMode displayMode;

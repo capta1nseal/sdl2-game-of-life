@@ -14,6 +14,7 @@ Currently there are no prebuilt binaries available, but building is very simlple
 Game of life is fully implemented, and I'm currently working on making it more fun to interact with.
 
 #### Controls
+- F11 toggles fullscreen
 - Space toggles whether the simulation is paused.
 - Backspace clears the grid.
 - Return (enter) fills the grid with living cells, and erases the squares at the very edges. this produces surprisingly beautiful patterns.
