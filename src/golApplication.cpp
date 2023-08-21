@@ -98,7 +98,7 @@ void GolApplication::initializeInput()
 
 void GolApplication::initializeGrid()
 {
-    grid.createGrid(192, 120);
+    grid.createGrid(1920, 1200);
     grid.initializeTexture(renderer, displayWidth, displayHeight);
     grid.randomizeGrid();
 }
