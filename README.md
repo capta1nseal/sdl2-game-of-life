@@ -5,7 +5,7 @@ An implementation of conway's game of life made in c++ with the sdl2 graphical f
 Currently there are no prebuilt binaries available, but building is very simlple. To compile with the provided makefile on linux:
 - You will need make, g++ and sdl2 development libraries in your include path.
 - Run "make build" from the root of the repository.
-- "make test" and "make build" have been provided for convenience.
+- "make test" and "make clean" have been provided for convenience.
 - "make clean" should be unnecessary as the dependency resolution and recompilation of binaries should be fully implemented in the makefile.
 -
 - I have not tried to compile this on windows but it should be very simple, as sdl2 is cross-platform.
