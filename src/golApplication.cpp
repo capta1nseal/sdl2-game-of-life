@@ -52,7 +52,7 @@ void GolApplication::run()
 
             delta = now() - start;
             
-            if (counter % 60 == 0)
+            if (counter % 600 == 0)
                 std::cout << delta.count() << "\n";
 
             counter += 1;
@@ -101,7 +101,7 @@ void GolApplication::initializeInput()
 
 void GolApplication::initializeGrid()
 {
-    grid.createGrid(1920, 1200);
+    grid.createGrid(960, 600);
     grid.initializeTexture(renderer, displayWidth, displayHeight);
     grid.randomizeGrid();
 }
@@ -154,6 +154,9 @@ void GolApplication::handleEvents()
             case SDL_SCANCODE_RETURN:
                 grid.clearGrid(true);
                 grid.clearFrame();
+                break;
+            case SDL_SCANCODE_R:
+                grid.randomizeGrid();
                 break;
             default:
                 break;

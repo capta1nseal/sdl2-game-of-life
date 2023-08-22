@@ -16,6 +16,7 @@ Game of life is fully implemented, and I'm currently working on making it more f
 #### Controls
 - F11 toggles fullscreen
 - Space toggles whether the simulation is paused.
+- R randomizes the state of the grid.
 - Backspace clears the grid.
 - Return (enter) fills the grid with living cells, and erases the squares at the very edges. this produces surprisingly beautiful patterns.
 - If you're wondering how to resize the grid, sorry for not implementing a way to do that through the program yet! It can be changed in src/golApplication.cpp->GolApplication::initializeGrid()
